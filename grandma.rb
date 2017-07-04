@@ -1,8 +1,9 @@
 puts "Hello, sunshine, how are you?"
 reply = gets.chomp
 
-if reply == reply.upcase
-  puts "great to see you!"
-else
-  puts "what? Can't hear you?"
+while reply != reply.upcase
+    puts "what? Can't hear you?"
+    reply = gets.chomp
 end
+
+puts "see you soon!"
